@@ -1,0 +1,28 @@
+@import './fonts';
+@import './var';
+@import './style';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+
+  background: $header;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: $white;
+}
+
+.navigation {
+  font-size: 16px;
+  line-height: 20px;
+
+  a:first-child {
+    margin-right: 32px;
+  }
+}
