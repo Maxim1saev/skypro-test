@@ -6,6 +6,8 @@ import product5 from './product5.png';
 import product6 from './product6.png';
 
 import arrowIcon from './arrowIcon.svg';
+import basketIcon from './basketIcon.svg';
+import catalogIcon from './catalogIcon.svg';
 
 export {
   product1,
@@ -14,5 +16,7 @@ export {
   product4,
   product5,
   product6,
-  arrowIcon
+  arrowIcon,
+  basketIcon,
+  catalogIcon
 };
