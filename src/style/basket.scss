@@ -7,6 +7,20 @@
   display: flex;
   column-gap: 32px;
   margin-top: 32px;
+
+  @media (max-width: 375px) {
+    padding: 0 16px;
+  }
+
+  @media (max-width: 576px) {
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  @media (max-width: 876px) {
+    flex-direction: column;
+    row-gap: 64px;
+  }
 }
 
 .basket {
@@ -33,6 +47,10 @@
   &:last-of-type {
     margin-bottom: 50px;
   }
+
+  @media (max-width: 576px) {
+    margin-bottom: 24px;
+  }
 }
 
 .basket-placeholder {
@@ -51,11 +69,20 @@
 
   font-size: 16px;
   line-height: 20px;
+
+  @media (max-width: 576px) {
+    display: none !important;
+  }
 }
 
 .basket-actions {
   display: none;
   column-gap: 8px;
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    column-gap: 14px;
+  }
 }
 
 .basket-actions-button {
@@ -75,6 +102,13 @@
     background: $black;
     color: $white;
   }
+
+  @media (max-width: 576px) {
+    width: 163px;
+
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .basketList-item-right-column {
@@ -85,13 +119,17 @@
 .basketList-item-right-column-image {
   width: 173px;
   height: 173px;
-  margin-right: 32px;
+
+  @media (max-width: 576px) {
+    display: none;
+  }
 }
 
 .basketList-item-right-column-info {
   max-width: 276px;
   display: flex;
   flex-direction: column;
+  padding-right: 16px;
 }
 
 .basketList-item-right-column-info-name {
@@ -100,6 +138,13 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 29px;
+
+  @media (max-width: 576px) {
+    margin-bottom: 8px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .basketList-item-right-column-info-description {
@@ -109,6 +154,11 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
+
+  @media (max-width: 576px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .basketList-item-right-column-info-price {
@@ -117,6 +167,11 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
+
+  @media (max-width: 576px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .basketList-item-right-column-info-button {
@@ -180,6 +235,10 @@
 
   border-radius: 20px;
   background: $gray;
+
+  @media (max-width: 576px) {
+    width: 343px;
+  }
 }
 
 .formOrder-title {

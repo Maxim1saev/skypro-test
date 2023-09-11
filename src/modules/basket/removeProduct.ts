@@ -8,8 +8,6 @@ export const removeProduct = (id: number, productNode: HTMLElement) => {
   const { basketList }: Basket =
     JSON.parse(localStorage.getItem('basket')) || {};
 
-  console.log(basketList);
-
   const newBasketList = basketList.filter((item) => item.id !== id);
 
   updateBasket(newBasketList);
